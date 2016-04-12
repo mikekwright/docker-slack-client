@@ -7,8 +7,8 @@ for you to use to connect to slack.
 ## Examples
 
         # This will send the default 'Hello World' message by the bot owner of the token to the channel #general
-        docker run --rm -e SLACK_TOKEN=<mytoken> mikekwright/slack-client
+        docker run --rm -e SLACK_TOKEN=<mytoken> mikewright/slack-client
 
         # This will send the message "Hi there" to channel "#my-channel"
-        docker run --rm -e SLACK_TOKE=<mytoken> -e SLACK_CHANNEL=#my-channel mikekwright/slack-client "Hi there"
+        docker run --rm -e SLACK_TOKE=<mytoken> -e SLACK_CHANNEL=#my-channel mikewright/slack-client "Hi there"
 
