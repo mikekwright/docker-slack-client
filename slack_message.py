@@ -17,11 +17,14 @@ if not botToken:
 
 if not botUsername:
     botUsername = "slackbot"
+    asUser = True
+else:
+    asUser = False
 
 if not botChannel:
     botChannel = "#general"
 
 sc = SlackClient(botToken)
 
-print(sc.api_call("chat.postMessage", channel=botChannel, username=botUsername, as_user=True, text=msg))
+print(sc.api_call("chat.postMessage", channel=botChannel, username=botUsername, as_user=asUser, text=msg))
 
